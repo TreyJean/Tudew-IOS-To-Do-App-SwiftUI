@@ -11,6 +11,9 @@
 		DD1D9BA4268551AD003854AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1D9BA3268551AD003854AD /* ContentView.swift */; };
 		DD1D9BA6268551AE003854AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD1D9BA5268551AE003854AD /* Assets.xcassets */; };
 		DD1D9BA9268551AE003854AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD1D9BA8268551AE003854AD /* Preview Assets.xcassets */; };
+		DD1D9BB3268552C7003854AD /* Stash.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD1D9BB1268552C7003854AD /* Stash.xcdatamodeld */; };
+		DD1D9BB6268553B5003854AD /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1D9BB5268553B5003854AD /* PersistenceController.swift */; };
+		DD239CF62687D3CA00B89C4B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD239CF52687D3CA00B89C4B /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		DD1D9BA5268551AE003854AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD1D9BA8268551AE003854AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DD1D9BAA268551AE003854AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD1D9BB2268552C7003854AD /* Stash.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stash.xcdatamodel; sourceTree = "<group>"; };
+		DD1D9BB5268553B5003854AD /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		DD239CF52687D3CA00B89C4B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +60,12 @@
 			children = (
 				DD1D9BA1268551AD003854AD /* TudewApp.swift */,
 				DD1D9BA3268551AD003854AD /* ContentView.swift */,
+				DD1D9BB1268552C7003854AD /* Stash.xcdatamodeld */,
 				DD1D9BA5268551AE003854AD /* Assets.xcassets */,
 				DD1D9BAA268551AE003854AD /* Info.plist */,
 				DD1D9BA7268551AE003854AD /* Preview Content */,
+				DD1D9BB5268553B5003854AD /* PersistenceController.swift */,
+				DD239CF52687D3CA00B89C4B /* Launch Screen.storyboard */,
 			);
 			path = Tudew;
 			sourceTree = "<group>";
@@ -126,6 +135,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD239CF62687D3CA00B89C4B /* Launch Screen.storyboard in Resources */,
 				DD1D9BA9268551AE003854AD /* Preview Assets.xcassets in Resources */,
 				DD1D9BA6268551AE003854AD /* Assets.xcassets in Resources */,
 			);
@@ -138,8 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD1D9BB3268552C7003854AD /* Stash.xcdatamodeld in Sources */,
 				DD1D9BA4268551AD003854AD /* ContentView.swift in Sources */,
 				DD1D9BA2268551AD003854AD /* TudewApp.swift in Sources */,
+				DD1D9BB6268553B5003854AD /* PersistenceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +209,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -252,7 +264,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -280,7 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TreyJean.Tudew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TreyJean.Tudew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -328,6 +340,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DD1D9BB1268552C7003854AD /* Stash.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD1D9BB2268552C7003854AD /* Stash.xcdatamodel */,
+			);
+			currentVersion = DD1D9BB2268552C7003854AD /* Stash.xcdatamodel */;
+			path = Stash.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DD1D9B96268551AD003854AD /* Project object */;
 }
